@@ -1,0 +1,106 @@
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: grid; /* Creating a grid container */
+    /* Defining the columns and rows of the grid */
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-template-rows: auto; /* one row */
+    /* Defining the layout of the grid */
+    grid-template-areas: 
+      "left right"; /* The row will span across both columns */
+    height: 100vh; /* To fill the viewport */
+
+    justify-content: center; /* horizontally center the grid items */
+    align-items: center; /* vertically center the grid items */
+  }
+
+  .left {
+    grid-area: left; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 300px;
+    padding-right: 80px;
+
+    color: white;
+    font-size: 18px;
+  }
+
+  .right{
+    grid-area: right;
+  }
+
+  .trial {
+    background-color: #5d54a3;
+    color: white;
+    border-radius: 5px;
+
+    width: 60%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .rightcontainer {
+    background-color: white;
+    border-radius: 5px;
+
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  input {
+    border-color: black;
+    border-radius: 5px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  input:focus{
+    padding-left: 15px;
+    font-weight: bold;
+  }
+
+  input::placeholder{
+    padding-left: 15px;
+    font-weight: bold;
+  }
+
+ .button {
+    background-color: #37cc8a;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 92%;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .rightcontainer p{
+    font-size: 10px;
+    padding-left: 70px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+
+  .rightcontainer span{
+    color: red;
+  }
+
+
+
+  
